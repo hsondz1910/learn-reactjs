@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Toggle from "./components/state/Toggle";
+// import YoutubeList from "./components/youtube/YoutubeList";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <YoutubeList>
+        <h2>
+          ReactJS được phát triển bởi Facebook và được giới thiệu lần đầu tiên
+          vào năm 2011. Ban đầu, ReactJS được phát triển để xây dựng giao diện
+          người dùng trên trang web Facebook, nhằm cải thiện tốc độ và hiệu suất
+          của ứng dụng web.
+        </h2>
+      </YoutubeList> */}
+      <Toggle/>
     </div>
   );
 }

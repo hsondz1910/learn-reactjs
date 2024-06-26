@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
+/* css-reset */
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.youtube-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+  padding: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.youtube-img {
+  height: 250px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.youtube-avt {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.youtube-channel {
+  font-size: 18px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  gap: 0 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.youtube-title {
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.youtube-description {
+  font-size: 14px;
+  color: #666;
 }
