@@ -1,5 +1,6 @@
 import "./App.css";
-import Toggle from "./components/state/Toggle";
+import Game from "./components/tictactoe/Game";
+// import Toggle from "./components/state/Toggle";
 // import YoutubeList from "./components/youtube/YoutubeList";
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
           của ứng dụng web.
         </h2>
       </YoutubeList> */}
-      <Toggle/>
+      {/* <Toggle/> */}
+      <Game/>
     </div>
   );
 }
