@@ -5,12 +5,12 @@ import React from 'react';
 //     onClick: () => true
 // }
 
-const Cell = ({ value, onClick}) => {
+const Cell = ({ value, onClick, className}) => {
     // const { value, onClick } = props
     // console.log(props)
 
     return (
-        <div className='game-cell' onClick={onClick}>
+        <div className={`game-cell ${className}`} onClick={onClick}>
             {value}
         </div>
     );

@@ -1,5 +1,6 @@
 import "./App.css";
 import Game from "./components/tictactoe/Game";
+import 'bootstrap/dist/css/bootstrap.min.css';
 // import Toggle from "./components/state/Toggle";
 // import YoutubeList from "./components/youtube/YoutubeList";
 

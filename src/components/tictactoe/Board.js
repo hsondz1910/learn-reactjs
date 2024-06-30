@@ -17,8 +17,9 @@ const Board = (props) => {
             {props.cells.map((item, index) => (
                 <Cell key={index}
                     value={item}
-                    onClick={() => props.onClick(index)}>
-                </Cell>
+                    onClick={() => props.onClick(index)}
+                    className={item === "X" ? "is-x" : item === "O" ? "is-o" : ""}
+                ></Cell>
             ))}
         </div>
     );
